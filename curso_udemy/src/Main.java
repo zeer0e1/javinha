@@ -1,7 +1,10 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        /*
         // Tipo int
         int y = 32;
 
@@ -37,5 +40,36 @@ public class Main {
         int idade = 31;
         double renda = 4000.0;
         System.out.printf("%s tem %d anos e ganha R$ %.2f reais %n",nome,idade,renda);
+
+         */
+        Locale.setDefault(Locale.US);
+
+        Scanner sc = new Scanner(System.in);
+
+        String nome;
+        int idade;
+        double peso;
+        char sexo;
+
+        System.out.println("Digite seu nome: ");
+        nome = sc.next();
+
+        System.out.println("Agora digite sua idade:  ");
+        idade = sc.nextInt();
+
+        System.out.println("Agora digite seu peso: ");
+        peso = sc.nextDouble();
+
+
+        System.out.println("Digite o sexo: ");
+        sexo = sc.next().charAt(0);
+
+        System.out.println("Informações digitadas:");
+        System.out.println("Nome: " + nome);
+        System.out.println(("Idade: " + idade));
+        System.out.println("Peso: " + peso);
+        System.out.println("Sexo: " + sexo);
+
+        sc.close();
     }
 }
