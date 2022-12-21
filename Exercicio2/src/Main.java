@@ -27,7 +27,7 @@ public class Main {
 
         System.out.printf("A =  %.4f",area * (Math.pow(raio,2)));
 
-     */
+
 
         System.out.println("QUARTO EXERCICIO");
 
@@ -40,6 +40,44 @@ public class Main {
 
         int diferenca = (a * b - c*d);
         System.out.println("DIFERENCA = " + diferenca );
+
+
+
+
+        System.out.println("Quinto exercício");
+
+        int cod1, n1,cod2,n2;
+        double vl1,vl2;
+
+        cod1 = sc.nextInt();
+        n1 = sc.nextInt();
+        vl1 = sc.nextDouble();
+
+        cod2 = sc.nextInt();
+        n2 = sc.nextInt();
+        vl2 = sc.nextDouble();
+
+        double total = (vl1 * n1) + (vl2 * n2);
+
+
+
+        System.out.printf("VALOR A PAGAR: RS$  %.2f",total);
+
+     */
+
+        System.out.println("Quarto exercício");
+
+        int numero_funcionario;
+        int numero_horas_trabalhadas;
+        double valor_hora;
+
+        numero_funcionario = sc.nextInt();
+        numero_horas_trabalhadas = sc.nextInt();
+        valor_hora = sc.nextDouble();
+
+        System.out.printf("Number %d %n",numero_funcionario);
+        System.out.printf("Salary %.2f ",valor_hora * numero_horas_trabalhadas);
+
         sc.close();
     }
 }
