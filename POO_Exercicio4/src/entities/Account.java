@@ -1,10 +1,11 @@
 package entities;
 
 public class Account {
-   private  int numberAccout;
+   private  final int numberAccout;
    private String name;
 
    private double balance;
+
 
    public Account(int numberAccout,String name){
          this.numberAccout = numberAccout;
@@ -31,6 +32,14 @@ public class Account {
 
    public double getBalance(){
        return  this.balance;
+   }
+
+   public void deposit(double quantity){
+       this.balance += quantity;
+   }
+
+   public void withdraw(double value){
+       this.balance -= value + 5;
    }
 
    public String toString(){
