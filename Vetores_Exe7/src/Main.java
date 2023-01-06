@@ -6,6 +6,8 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
 
+        
+
         double media = 0;
         double soma = 0;
         System.out.print("Quantos elementos vai ter o vetor ? ");
